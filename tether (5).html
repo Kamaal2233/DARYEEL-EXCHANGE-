@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USDT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <form action="https://sheetdb.io/api/v1/g67p4p72k2hq9" method="POST" id="sheetdb-payments">
+    <div class="container">
+        <h2>USDT TRC20</h2>
+        <form id="exchangeForm">
+            <input type="number" id="amount" name="data[Amount]" placeholder="Enter the amount">
+            <p>Copy this address to send</p>
+            <h5>USDT TRC20 </h5>
+            <div>
+                <b>TBTUcKBT1A2CyNyZTk<br>fdVjmTcG6aFFZ2JF</b>
+            </div>
+          <input type="text" id="wallet" name="From Deposit]" placeholder="From Deposit                                  ">
+
+                <div onclick="generateNumber()"></div>
+
+            <input type="text" id="phoneNumber" name="data[To Withdraw]" placeholder="To Withdraw                                      ">
+            <select id="walletType" name="data[Wallet Type]">
+                <option value="" disabled selected>Select Wallet Type</option>
+                <option value="Evc">Evc</option>
+                <option value="Zaad">Zaad</option>
+                <option value="eDahab">eDahab</option
+                                <option value="Sahal">Sahal</option>
+                                                                                                <option value="EBIRR">EBIRR</option>
+
+                <option value="Jeeb">Jeeb</option>
+
+            </select>
+            
+
+            
+            <input type="email" id="email" name="data[email]" placeholder="Enter your Email">
+                    <h1 id="numberDisplay"></h1>
+ 
+            <button type="button" id="completeButton">Complete</button>
+        </form>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+    

